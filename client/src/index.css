@@ -1,0 +1,228 @@
+body {
+  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+  background-size: 300% 300%;
+  -webkit-animation: Background 25s ease infinite;
+  -moz-animation: Background 25s ease infinite;
+  animation: Background 25s ease infinite;
+}
+
+@-webkit-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.app {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(https://i.imgur.com/wCG2csZ.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+
+  
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 4em;
+  letter-spacing: -2px;
+  text-align: center;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+}
+
+h1:after {
+  display: block;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Poiret One', sans-serif;
+  content: 'Subtitle goes here';
+  font-size: .4em;
+  text-align: center;
+}
+
+.button-line {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4em;
+  opacity: .8;
+  padding: 20px 40px;
+  text-decoration: none;
+    transition: all .5s ease;
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+  }
+  
+  .button-line:hover {
+    opacity: 1;
+  }
+
+.board
+{
+  display:flex;
+  background-color:rgb(15, 152, 176);
+  height: 40%;
+  width: 90%;
+  border-radius:50px;
+  padding:30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.section
+{
+  background-color:rgba(255, 255, 255, 0.03);
+  margin:5px;
+}
+
+.endsection
+{
+  display:flex;
+  flex-grow:1;
+}
+
+.midsection
+{
+  display:flex;
+  flex-direction:column;
+  flex-grow:6;
+}
+
+.midrow
+{
+  display:flex;
+  flex-grow:1;
+}
+
+.pot
+{
+  position:relative;
+  background-color:rgba(255, 255, 255, 0.08);
+  flex-grow:1;
+  margin:5px;
+  border-radius:50px;
+}
+
+.bead
+{
+  position:absolute;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+}
+
+.wooden-text {
+
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  color: #fff;
+  mix-blend-mode: darken;
+  text-shadow: 0 0 0.05em rgba(0, 0, 0, 0.2), -0.025em 0.025em 0.1em #000,
+    -0.05em 0.05em 0.1em #000, -0.1em 0.1em 0.3em #000,
+    -0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
+  translate: translate3d(0, 0, 0);
+  font-family: "Muli", sans-serif;
+  font-size: 10vmin;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.small {
+  font-size: 0.475em;
+}
+
+
+.game{
+
+  width: 100%;
+  height: 100%;
+}
+
+h8{
+  color: white;
+}
+
+.ball {
+	display: block;
+	width: 30px;
+	height: 30px;
+	align-self: center;
+	border-radius: 50%;
+  
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  right: 35%;
+
+}
+
+.b1 {
+  background-color: rgb(49, 145, 231);
+	box-shadow: inset -25px -15px 40px rgba(0,0,0,.3);
+	background-image: linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+}
+.balls{
+
+
+}
